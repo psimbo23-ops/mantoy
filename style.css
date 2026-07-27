@@ -1,0 +1,108 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Segoe UI,sans-serif;
+}
+
+body{
+    background:linear-gradient(135deg,#ff9ec4,#ffd6e7,#fff0f5);
+    overflow-x:hidden;
+}
+
+/* First Page */
+
+.hero{
+    height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    flex-direction:column;
+    color:white;
+    text-align:center;
+}
+
+.hero h1{
+    font-size:55px;
+    margin-bottom:15px;
+    text-shadow:2px 2px 10px rgba(0,0,0,.3);
+}
+
+.hero p{
+    font-size:22px;
+}
+
+.scroll-text{
+    margin-top:60px;
+    font-size:22px;
+    animation:bounce 1.2s infinite;
+}
+
+@keyframes bounce{
+    50%{
+        transform:translateY(12px);
+    }
+}
+
+/* Letter */
+
+.letter{
+    min-height:100vh;
+    display:flex;
+    justify-content:center;
+    padding:60px 20px;
+}
+
+.paper{
+    width:90%;
+    max-width:850px;
+    background:white;
+    padding:45px;
+    border-radius:18px;
+    box-shadow:0 15px 40px rgba(0,0,0,.2);
+    line-height:2;
+    font-size:20px;
+    color:#444;
+}
+
+.paper h2{
+    text-align:center;
+    color:#ff4d88;
+    margin-bottom:30px;
+}
+
+.paper h3{
+    text-align:center;
+    color:#ff4d88;
+    margin-top:35px;
+}
+
+.from{
+    text-align:center;
+    margin-top:10px;
+    color:#777;
+}
+
+/* Floating Hearts */
+
+.hearts span{
+    position:fixed;
+    bottom:-30px;
+    color:#ff4d88;
+    animation:float linear forwards;
+    pointer-events:none;
+}
+
+@keyframes float{
+
+    from{
+        transform:translateY(0) scale(.5);
+        opacity:1;
+    }
+
+    to{
+        transform:translateY(-120vh) scale(1.5);
+        opacity:0;
+    }
+
+}
